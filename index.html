@@ -35,7 +35,7 @@
         <h2>
 <a name="pxe" class="anchor" href="#pxe"><span class="octicon octicon-link"></span></a>PXE</h2>
 
-<p>PXE was introduced as part of the Wired for Management framework by Intel and is described in the specification (version 2.1) published by Intel and SystemSoft on September 20, 1999.[1] It makes use of several network protocols like Internet Protocol (IPv4), User Datagram Protocol (UDP), Dynamic Host Configuration Protocol (DHCP) and Trivial File Transfer Protocol (TFTP) and of concepts like Globally Unique Identifier (GUID), Universally Unique Identifier (UUID) and Universal Network Device Interface and extends the firmware of the PXE client (the computer to be bootstrapped via PXE) with a set of predefined Application Programming Interfaces (APIs).</p>
+<p>PXE makes use of several network protocols like Internet Protocol (IPv4), User Datagram Protocol (UDP), Dynamic Host Configuration Protocol (DHCP) and Trivial File Transfer Protocol (TFTP) and of concepts like Globally Unique Identifier (GUID), Universally Unique Identifier (UUID) and Universal Network Device Interface and extends the firmware of the PXE client (the computer to be bootstrapped via PXE) with a set of predefined Application Programming Interfaces (APIs).</p>
 
 <p>The firmware on the client tries to locate a PXE redirection service on the network (Proxy DHCP) in order to receive information about available PXE boot servers. After parsing the answer, the firmware will ask an appropriate boot server for the file path of a network bootstrap program (NBP), download it into the computer's random-access memory (RAM) using TFTP, possibly verify it, and finally execute it.</p>
 
