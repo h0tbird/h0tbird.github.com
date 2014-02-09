@@ -1,32 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
     <title>h0tbird.github.io by h0tbird</title>
-  </head>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  </head>
   <body>
 
-    <header>
-      <div class="container">
+      <header>
         <h1>h0tbird.github.io</h1>
-        <h2>Sysadmin &lt;| tag == &#39;smart&#39; |&gt; { ensure =&gt; at_pub }</h2>
+        <p>Sysadmin &lt;| tag == &#39;smart&#39; |&gt; { ensure =&gt; at_pub }</p>
+      </header>
 
-        <section id="downloads">
-          <a href="https://github.com/h0tbird" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <div id="banner">
+        <span id="logo"></span>
 
-    <div class="container">
-      <section id="main_content">
+        <a href="https://github.com/h0tbird" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
         <h2>
+<a name="pxe" class="anchor" href="#pxe"><span class="octicon octicon-link"></span></a>PXE</h2>
+
+<p>PXE was introduced as part of the Wired for Management framework by Intel and is described in the specification (version 2.1) published by Intel and SystemSoft on September 20, 1999.[1] It makes use of several network protocols like Internet Protocol (IPv4), User Datagram Protocol (UDP), Dynamic Host Configuration Protocol (DHCP) and Trivial File Transfer Protocol (TFTP) and of concepts like Globally Unique Identifier (GUID), Universally Unique Identifier (UUID) and Universal Network Device Interface and extends the firmware of the PXE client (the computer to be bootstrapped via PXE) with a set of predefined Application Programming Interfaces (APIs).</p>
+
+<p>The firmware on the client tries to locate a PXE redirection service on the network (Proxy DHCP) in order to receive information about available PXE boot servers. After parsing the answer, the firmware will ask an appropriate boot server for the file path of a network bootstrap program (NBP), download it into the computer's random-access memory (RAM) using TFTP, possibly verify it, and finally execute it.</p>
+
+<h2>
 <a name="kickstart" class="anchor" href="#kickstart"><span class="octicon octicon-link"></span></a>Kickstart</h2>
 
 <p>Many system administrators would prefer to use an automated installation method to install Fedora or Red Hat Enterprise Linux on their machines. To answer this need, Red Hat created the kickstart installation method. Using kickstart, a system administrator can create a single file containing the answers to all the questions that would normally be asked during a typical installation.</p>
@@ -78,8 +91,11 @@
 
 <p>Puppet is IT automation software that helps system administrators manage infrastructure throughout its lifecycle, from provisioning and configuration to patch management and compliance. Using Puppet, you can easily automate repetitive tasks, quickly deploy critical applications, and proactively manage change, scaling from 10s of servers to 1000s, on-premise or in the cloud.</p>
       </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
