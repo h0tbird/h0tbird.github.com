@@ -1,5 +1,5 @@
 /*
-Leap Day for Github Pages
+Leap Day for GitHub Pages
 by Matt Graham
 */
 @font-face {
@@ -755,18 +755,6 @@ header p {
   line-height: 14px;
   font-size: 14px;
   background-color: #FFE788;
-}
-#banner .navlinks {
-    float: right;
-    margin: 0 480px 0 0;
-}
-#banner .navlinks span {
-    float: left;
-    line-height: 55px;
-    font-size: 90%;
-    color: #9d7f0d;
-    text-transform: uppercase;
-    text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
 #banner .downloads {
   float: right;

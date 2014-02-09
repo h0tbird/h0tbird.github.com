@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>h0tbird.github.com by h0tbird</title>
+    <title>h0tbird.github.io by h0tbird</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -18,59 +18,74 @@
 
       <header>
         <h1>h0tbird.github.io</h1>
-        <p>Sysadmin &lt;| tag == 'smart' |&gt; { ensure =&gt; at_pub }</p>
+        <p>Sysadmin &lt;| tag == &#39;smart&#39; |&gt; { ensure =&gt; at_pub }</p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
-        <div class="navlinks">
-          <span>
-              <a href="http://h0tbird.github.com">Home</a> |&nbsp
-              <a href="http://h0tbird.github.com/automation.html">Automation</a> |&nbsp
-              <a href="http://h0tbird.github.com/bigdata.html">Big Data</a>
-          </span>
-        </div>
-      </div>
+
+        <a href="https://github.com/h0tbird" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
 
     <div class="wrapper">
       <nav>
         <ul></ul>
       </nav>
       <section>
-        <h2>Kickstart</h2>
+        <h2>
+<a name="kickstart" class="anchor" href="#kickstart"><span class="octicon octicon-link"></span></a>Kickstart</h2>
 
 <p>Many system administrators would prefer to use an automated installation method to install Fedora or Red Hat Enterprise Linux on their machines. To answer this need, Red Hat created the kickstart installation method. Using kickstart, a system administrator can create a single file containing the answers to all the questions that would normally be asked during a typical installation.</p>
 
 <p>Kickstart files can be kept on a server system and read by individual computers during the installation. This installation method can support the use of a single kickstart file to install Fedora or Red Hat Enterprise Linux on multiple machines, making it ideal for network and system administrators.</p>
 
-<h2>Cobbler</h2>
+<h2>
+<a name="cobbler" class="anchor" href="#cobbler"><span class="octicon octicon-link"></span></a>Cobbler</h2>
 
 <p>Cobbler is a Linux installation server that allows for rapid setup of network installation environments. It glues together and automates many associated Linux tasks so you do not have to hop between lots of various commands and applications when rolling out new systems, and, in some cases, changing existing ones. It can help with installation, DNS, DHCP, package updates, power management, configuration management orchestration, and much more.</p>
 
-<h2>Koan</h2>
+<h2>
+<a name="koan" class="anchor" href="#koan"><span class="octicon octicon-link"></span></a>Koan</h2>
 
 <p>Koan stands for "kickstart-over-a-network" and is a client-side helper program for use with Cobbler. koan allows for both network provisioning of new virtualized guests (Xen, QEMU/KVM , VMware) and re-installation of an existing system.</p>
 
-<p>When invoked, koan requests install information from a remote cobbler boot server, it then kicks off installations based on what is retrieved from cobbler and fed in on the koan command line.</p>
+<p>When invoked, koan requests install information from a remote cobbler boot server, it then kicks off installations based on what is retrieved from cobbler and fed in on the koan command line. The examples below show the various use cases.</p>
 
-<h2>Libvirt</h2>
+<h2>
+<a name="libvirt" class="anchor" href="#libvirt"><span class="octicon octicon-link"></span></a>Libvirt</h2>
 
 <p>Libvirt is collection of software that provides a convenient way to manage virtual machines and other virtualization functionality, such as storage and network interface management. These software pieces include an API library, a daemon (libvirtd), and a command line utility (virsh).</p>
 
 <p>A primary goal of libvirt is to provide a single way to manage multiple different virtualization providers/hypervisors. For example, the command 'virsh list --all' can be used to list the existing virtual machines for any supported hypervisor (KVM, Xen, VMWare ESX, etc.) No need to learn the hypervisor specific tools!</p>
 
-<h2>KVM</h2>
+<h2>
+<a name="kvm" class="anchor" href="#kvm"><span class="octicon octicon-link"></span></a>KVM</h2>
 
 <p>KVM (for Kernel-based Virtual Machine) is a full virtualization solution for Linux on x86 hardware containing virtualization extensions (Intel VT or AMD-V). It consists of a loadable kernel module, kvm.ko, that provides the core virtualization infrastructure and a processor specific module, kvm-intel.ko or kvm-amd.ko. KVM also requires a modified QEMU although work is underway to get the required changes upstream.</p>
 
 <p>Using KVM, one can run multiple virtual machines running unmodified Linux or Windows images. Each virtual machine has private virtualized hardware: a network card, disk, graphics adapter, etc.</p>
 
-<h2>Puppet</h2>
+<h2>
+<a name="docker" class="anchor" href="#docker"><span class="octicon octicon-link"></span></a>Docker</h2>
+
+<p>Docker is an open-source engine that automates the deployment of any application as a lightweight, portable, self-sufficient container that will run virtually anywhere.</p>
+
+<p>Docker containers can encapsulate any payload, and will run consistently on and between virtually any server. The same container that a developer builds and tests on a laptop will run at scale, in production*, on VMs, bare-metal servers, OpenStack clusters, public instances, or combinations of the above.</p>
+
+<p>Common use cases for Docker include:</p>
+
+<ul>
+<li>Automating the packaging and deployment of applications</li>
+<li>Creation of lightweight, private PAAS environments</li>
+<li>Automated testing and continuous integration/deployment</li>
+<li>Deploying and scaling web apps, databases and backend services</li>
+</ul><h2>
+<a name="puppet" class="anchor" href="#puppet"><span class="octicon octicon-link"></span></a>Puppet</h2>
 
 <p>Puppet is IT automation software that helps system administrators manage infrastructure throughout its lifecycle, from provisioning and configuration to patch management and compliance. Using Puppet, you can easily automate repetitive tasks, quickly deploy critical applications, and proactively manage change, scaling from 10s of servers to 1000s, on-premise or in the cloud.</p>
       </section>
       <footer>
-      <p><small>Hosted on <a href="http://github.com">GitHub</a> Pages</small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
