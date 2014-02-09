@@ -78,6 +78,23 @@
 <p>Using KVM, one can run multiple virtual machines running unmodified Linux or Windows images. Each virtual machine has private virtualized hardware: a network card, disk, graphics adapter, etc.</p>
 
 <h2>
+<a name="lxc" class="anchor" href="#lxc"><span class="octicon octicon-link"></span></a>LXC</h2>
+
+<p>LXC is a userspace interface for the Linux kernel containment features.
+Through a powerful API and simple tools, it lets Linux users easily create and manage system or application containers.</p>
+
+<p>Current LXC uses the following kernel features to contain processes:</p>
+
+<ul>
+<li>Kernel namespaces (ipc, uts, mount, pid, network and user)</li>
+<li>Apparmor and SELinux profiles</li>
+<li>Seccomp policies</li>
+<li>Chroots (using pivot_root)</li>
+<li>Kernel capabilities</li>
+<li>Control groups (cgroups)</li>
+</ul><p>As such, LXC is often considered as something in the middle between a chroot on steroids and a full fledged virtual machine. The goal of LXC is to create an environment as close as possible as a standard Linux installation but without the need for a separate kernel.</p>
+
+<h2>
 <a name="docker" class="anchor" href="#docker"><span class="octicon octicon-link"></span></a>Docker</h2>
 
 <p>Docker is an open-source engine that automates the deployment of any application as a lightweight, portable, self-sufficient container that will run virtually anywhere.</p>
